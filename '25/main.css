@@ -1,0 +1,102 @@
+body {
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+background-color: #337357;
+line-height: 1.5; 
+margin: 0; 
+padding: 0; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "heading_1 heading_1"
+    "navbar navbar"
+    "image_1 paragraph_1"
+    "video_1 paragraph_2"
+    "footer footer";   
+}
+
+.heading_1 {
+    grid-area: heading_1;
+    background-color: #337357;
+    text-align: center;
+    font-family: "Courier Prime", monospace;
+    padding: 95m;
+    color: #ffffff;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #337357;
+    text-align: center;
+    font-family: "Courier Prime", monospace;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar ul {
+list-style-type: none;
+display: inline;
+color: #ffffff;
+}
+
+
+.navbar li {
+    display: inline;
+    padding: 32px;
+    color: #ffffff;
+}
+
+
+.navbar a {
+    padding: 20px;
+    background-color: #6D9F71;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.image_1 {
+    grid-area: image_1;
+    background-color: #6D9F71;
+}
+
+.paragraph_1 {
+    grid-area: paragraph_1;
+    background-color: #6D9F71;
+    padding: 50px;
+    font-family: "Courier Prime", monospace;
+    font-size: large;
+    color: #ffffff;
+}
+
+.viedo_1 {
+    grid-area: video_1;
+    background-color: #337357;
+}
+
+.paragraph_2 {
+grid-area: paragraph_2;
+background-color: #337357;
+padding: 50px;
+font-family: "Courier Prime", monospace;
+font-size: large;
+color: #ffffff;
+}
+
+
+.footer {
+grid-area: footer;
+background-color: #6D9F71;
+text-align: center;
+font-family: "Courier Prime", monospace;
+font-size: large;
+color: #ffffff;
+}
+
+
+img {
+    width: 95%;
+}
